@@ -243,7 +243,7 @@ p span{
 
 /* creates the background box for each */
 .services-list a div{
-    height: 300px;
+    height: 100%;
     background: #262626;
     padding: 40px;
     font-weight: 300;
