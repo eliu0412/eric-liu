@@ -21,7 +21,7 @@ body{
 
 #header{
     width: 100%;
-    height: 120vh;
+    height: 100vh;
 
     background-size: cover;
     background-position: center;
@@ -100,7 +100,7 @@ nav ul li a:hover{
 }
 
 .header-text{
-    margin-top: 15%;
+    margin-top: 20%;
     font-size: 30px;
     margin-right: 15%;
     width: 50%
@@ -295,6 +295,7 @@ p span{
 
 #contact{
     margin-top: 40px;
+    margin-bottom: 80px;
 }
 
 .contact-left{
@@ -302,13 +303,13 @@ p span{
 }
 
 .contact-right{
-    padding-top: 110px;
+    padding-top: 100px;
     flex-basis: 50%;
     align-items: center;
 }
 
 .contact-right h1{
-    font-size: 80px;
+    font-size: 50px;
     transition: 0.5s;
 }
 
@@ -340,7 +341,7 @@ p span{
 }
 .social-icons a{
     text-decoration: none;
-    font-size: 100px;
+    font-size: 50px;
     margin-right: 50px;
     color: #ababab;
     display: inline-block;
