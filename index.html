@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b75daebec3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <nav>
+        <h1 id="top-left"><a href="#header">&lt; <span>Eric Liu</span> / &gt;</a></h1>
+        <div class="list-items">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="assets/my_resume.pdf" target="_blank">Resume</a></li>
+                <i class="fa-solid fa-x" onclick="closemenu()"></i>
+            </ul>
+        </div>
+
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="container">
+        <div class="head">
+            <div class="header-text">
+                <h1>Hi, I'm <span>Eric Liu</span>!</h1>
+                <p>I’m a <span>Computer Science</span> student at the <span>University of Toronto</span>. My interests include software development, AI/ML engineering,  and mathematics. Outside of coding, you’ll probably find me playing volleyball, in the gym, or hanging out with friends and eating.
+                </p>
+                <br>
+                <p>Press the arrow or scroll to see some of the projects I’ve been working on:</p>
+            </div>
+            <div class="header-pic">
+                <img id="me" src="assets/images/self3.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div class="downarr">
+        <a href="#projects"><i class="fa-regular fa-circle-down"></i></a>
+    </div>
+</div>
+
+
+
+<!-- services section -->
+<div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="services-list">
+                <div className="desc">
+                    <a href="https://github.com/13lack13lood/Hands-On-Fluency" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <h1>HandsOn Fluency</h1>
+                    <br>
+                    <p id="technologies">React, Python, OpenCV, MySQL, Tailwind</p>
+                    <br>
+                    <p>Implemented an ASL learning platform utilizing OpenCV’s machine learning capabilities to recognize and interpret user hand signs in real-time.</p>
+                </div>
+
+                <div className="desc">
+                    <a href="https://github.com/eliu0412/ExerciseTracking" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <h1>ExerTrack</h1>
+                    <br>
+                    <p id="technologies">React, Node, Express, MongoDB, Bootstrap</p>
+                    <br>
+                    <p>Developed a dynamic website that allows multiple users to track their exercises, logging its description, duration, and dates.</p>
+                </div>
+
+                <div className="desc">
+                    <a href="https://github.com/eliu0412/focus-bot" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <h1>Focus Bot</h1>
+                    <br>
+                    <p id="technologies">Python, Discord API, Google Translate API, Chemlib</p>
+                    <br>
+                    <p>Built a Discord Bot tailored for a school/study environment that comes with time management features, rapid translations, access to chemical properties, and simple calculations.</p>
+                </div>
+
+            </div>
+            <div class="services-list">
+                <div className="desc">
+                    <a href="https://github.com/eliu0412/zootopia" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <h1>Zootopia</h1>
+                    <br>
+                    <p id="technologies">Java, JavaFX, OOP</p>
+                    <br>
+                    <p>A 2 player turn-based game that draws inspiration from Pokemon, set in a hypothetical scenario where animals break out in a zoo and start brawling.</p>
+                </div>
+                <div class="empty">
+
+                </div>
+
+                <div class="empty">
+
+                </div>
+
+            </div>
+
+        </div>
+</div>
+
+<!-- PORTFOLIO SECTION ----------------------- -->
+
+
+<!--    contact section  ---------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <div class="social-icons">
+                    <a href="https://github.com/eliu0412" target="_blank"><i class="fa-brands fa-github"></i></i></a>
+                    <a href="https://discordapp.com/users/352615091155369987" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                    <a href="https://www.instagram.com/_ericliuu/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/eric-liu-012152235/" target="_blank"><i class="fa-brands fa-linkedin "></i></a>
+
+                </div>
+                <p class="contact-info"><i class="fa-solid fa-envelope"></i></i>eric.liu642@gmail.com</p>
+                <p class="contact-info"><i class="fa-regular fa-envelope"></i>eri.liu@mail.utoronto.ca</p>
+                <p class="contact-info"><i class="fa-solid fa-phone"></i>647-809-4975</p>
+            </div>
+            <div class="contact-right">
+                <h1>Thanks for visiting!
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright Eric 2024 <i class="fa-solid fa-poo"></i></p>
+    </div>
+
+</div>
+
+<script>
+// this script hides the content of each tab and brings in the new one when we switch tabs in about me
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+
+    }
+
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx5rs3AQaBBhTKKS-JO-ZTRT698TCbJ11gwm5SltYG18L3zchsFp_AMfIKRyEcSHMmgqg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent sucessfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
