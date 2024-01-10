@@ -405,6 +405,13 @@ nav .fa-solid{
     display: none;
 }
 
+@media only screen and (max-width: 1650px){
+    .header-pic{
+        width: 50%;
+        margin-top: 20%;
+    }
+}
+
 @media only screen and (max-width: 600px){
 
     .head{
