@@ -428,7 +428,7 @@ nav .fa-solid{
     }
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1400px){
 
     .head{
         display:contents;
